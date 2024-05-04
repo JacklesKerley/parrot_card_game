@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background-color: #EEF9BF;
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -29,7 +28,7 @@ body {
   font-weight: 700;
   color: #75B79E;
   width: 50%;
-  margin: 40px 0;
+  margin-bottom: 28px;
 }
 
 .containerCards {
@@ -40,16 +39,34 @@ body {
   flex-wrap: wrap;
 }
 
+.cards{
+  width: 117px;
+  height: 146px;
+  margin: 16px;
+  position: relative;
+}
+
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #A7E9AF;
-  width: 117px;
-  height: 146px;
-  margin: 16px;
   border: 1px solid #99CEA8;
   border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.back {
+  transform: rotateY(0deg);
+}
+
+.front {
+  transform: rotateY(-180deg)
 }
 
 .card img {

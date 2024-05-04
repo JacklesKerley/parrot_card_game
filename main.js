@@ -31,8 +31,108 @@ for (let i = 0; i < cartasEmbaralhadas.length; i++) {
   let cards = document.querySelector('.containerCards')
 
   cards.innerHTML += `
-    <div class="card escondido">
-      <img src="/img/${cartasEmbaralhadas[i]}.gif" alt="${cartasEmbaralhadas[i]}">
+    <div class="cards" onclick="virarCarta(this)">
+      <div class="card papagaio">
+        <img src="/img/back.png" alt="" srcset="">
+      </div>
+      <div class="card carta front" value="${cartasEmbaralhadas[i]}">
+        <img src="/img/${cartasEmbaralhadas[i]}.gif" alt="${cartasEmbaralhadas[i]}">
+      </div>
     </div>
   `
 }
+
+let cardFront1 = ""
+let cardBack1 = ""
+let cardFront2 = ""
+let cardBack2 = ""
+let cartasViradas = []
+
+let jogadas = 0
+
+let contador = 1
+function virarCarta(cards) {
+  if (contador == 1) {
+    cardFront1 = cards.querySelector(".carta")
+    cardBack1 = cards.querySelector(".papagaio")
+
+    cardFront1.classList.remove("front")
+    cardBack1.classList.add("front")
+    cardBack1.classList.remove("back")
+
+    contador++
+
+    cartasViradas.push(cards)
+    cards.onclick = null
+
+    jogadas++
+
+  } else if (contador == 2) {
+    cardFront2 = cards.querySelector(".carta")
+    cardBack2 = cards.querySelector(".papagaio")
+
+    cardFront2.classList.remove("front")
+    cardBack2.classList.add("front")
+    cardBack2.classList.remove("back")
+
+    contador++
+
+    cartasViradas.push(cards)
+    cards.onclick = null
+
+    jogadas++
+
+    verificaPar()
+  }
+
+}
+
+
+let paresFeitos = 0
+function verificaPar() {
+  let teste = cardFront1.getAttribute("value") == cardFront2.getAttribute("value")
+
+    if (teste) {
+      resetCards()
+
+      paresFeitos++
+
+     cartasViradas = []
+
+     if (paresFeitos == (quantidadeDeCartas/2)) {
+      setTimeout(alert(jogadas), 10000)
+     }
+
+    } else {
+
+      setTimeout(() => {
+        cardFront1.classList.add("front")
+        cardBack1.classList.remove("front")
+        cardBack1.classList.add("back")
+    
+        cardFront2.classList.add("front")
+        cardBack2.classList.remove("front")
+        cardBack2.classList.add("back")
+  
+        resetCards()
+  
+        cartasViradas.forEach(function (card) {
+          card.onclick = function (){
+            virarCarta(this)
+          }
+        })
+        
+        cartasViradas = []
+      }, 1000)
+    }
+
+}
+
+function resetCards() {
+  contador = 1
+  cardFront1 = ""
+  cardBack1 = ""
+  cardFront2 = ""
+  cardBack2 = ""
+}
+
