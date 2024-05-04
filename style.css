@@ -28,7 +28,15 @@ body {
   font-weight: 700;
   color: #75B79E;
   width: 50%;
+  margin-top: 40px;
   margin-bottom: 28px;
+}
+
+@media (max-width: 335px) {
+  .tituloJogo {
+    width: 100%;
+    font-size: 36px;
+  }
 }
 
 .containerCards {

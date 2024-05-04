@@ -83,6 +83,10 @@ function virarCarta(cards) {
     jogadas++
 
     verificaPar()
+
+    if (paresFeitos == (quantidadeDeCartas/2)) {
+      setTimeout(fimDeJogo, 800)
+    }
   }
 
 }
@@ -92,19 +96,11 @@ let paresFeitos = 0
 function verificaPar() {
   let teste = cardFront1.getAttribute("value") == cardFront2.getAttribute("value")
 
-    if (teste) {
+    if (teste) { 
+      paresFeitos++
       resetCards()
 
-      paresFeitos++
-
-     cartasViradas = []
-
-     if (paresFeitos == (quantidadeDeCartas/2)) {
-      setTimeout(alert(jogadas), 10000)
-     }
-
     } else {
-
       setTimeout(() => {
         cardFront1.classList.add("front")
         cardBack1.classList.remove("front")
@@ -113,16 +109,15 @@ function verificaPar() {
         cardFront2.classList.add("front")
         cardBack2.classList.remove("front")
         cardBack2.classList.add("back")
-  
-        resetCards()
-  
+      
         cartasViradas.forEach(function (card) {
           card.onclick = function (){
             virarCarta(this)
           }
         })
         
-        cartasViradas = []
+        resetCards()
+
       }, 1000)
     }
 
@@ -134,5 +129,12 @@ function resetCards() {
   cardBack1 = ""
   cardFront2 = ""
   cardBack2 = ""
+
+  cartasViradas = []
+}
+
+function fimDeJogo() {
+  alert(`Você ganhou em ${jogadas} jogadas!`)
+  window.location.reload()
 }
 
