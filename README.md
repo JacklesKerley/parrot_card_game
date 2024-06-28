@@ -16,23 +16,23 @@ Jogo de cartas de memória.
 # Tecnologia Utilizada
 
 <div style="display: flex; align-items: center; margin-bottom: 4px;">
- &nbsp; &nbsp; &nbsp; • <img alt="Visual Studio Code" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" style="margin-right: 10px;">
+ &nbsp; &nbsp; &nbsp; • <img alt="Visual Studio Code" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png">
   Visual Studio Code
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 4px;">
-  &nbsp; &nbsp; &nbsp; • <img alt="HTML5" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" style="margin-right: 10px;">
+  &nbsp; &nbsp; &nbsp; • <img alt="HTML5" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
   HTML
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 5px;">
-  &nbsp; &nbsp; &nbsp; • <img alt="CSS3" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" style="margin-right: 10px;">
+  &nbsp; &nbsp; &nbsp; • <img alt="CSS3" width="26" height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
   CSS
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 4px;">
-  &nbsp; &nbsp; &nbsp; • <img alt="Javascript" width="18" height="23" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" style="margin-right: 15px; margin-left: 4px">
-  Javascript
+  &nbsp; &nbsp; &nbsp; • &nbsp;<img alt="Javascript" width="18" height="23" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+  &nbsp;Javascript
 </div>
 
 # Game
