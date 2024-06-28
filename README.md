@@ -2,8 +2,6 @@
 
 Jogo de cartas de memória.
 
-<br />
-
 # Como Jogar?
 
 
@@ -14,8 +12,6 @@ Jogo de cartas de memória.
 2. O jogador deve virar duas cartas por vez. Se as cartas forem iguais, elas permanecerão viradas; caso contrário, voltarão a ficar viradas para baixo.
 
 3. O jogo terminará quando todas as cartas estiverem viradas, mostrando a imagem. No fim, aparecerá a quantidade de jogadas que o jogador realizou.
-
-<br />
 
 # Tecnologia Utilizada
 
@@ -38,8 +34,6 @@ Jogo de cartas de memória.
   &nbsp; &nbsp; &nbsp; • <img alt="Javascript" width="18" height="23" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" style="margin-right: 15px; margin-left: 4px">
   Javascript
 </div>
-
-<br />
 
 # Game
 
