@@ -39,4 +39,4 @@ Jogo de cartas de memória.
 
 ![GIF](./gifs/Gravação%20de%20Tela%202024-06-09%20às%2015%20(online-video-cutter.com).gif)
 
-Link: https://projeto-drive-parrot-card-game.onrender.com/
+Link: https://parrot-card-game.onrender.com/
